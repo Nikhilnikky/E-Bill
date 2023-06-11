@@ -1,0 +1,41 @@
+.login_container{
+    -fx-background-color:black;
+}
+.login_leftVbox{
+    -fx-background-color: #CB4335;
+}
+.login_rightVBox{
+    -fx-background-color: #c0857e;
+}
+.login_container_Label{
+    -fx-text-fill:rgb(255, 255, 255);
+}
+.login_container TextField{
+    -fx-background-color:transparent;
+    -fx-border-color: #CB4335;
+    -fx-border-width: 0px 0px 2px 0px;
+    -fx-text-fill: white;
+}
+.login_container PasswordField{
+    -fx-background-color:transparent;
+    -fx-border-color: #CB4335;
+    -fx-border-width: 0px 0px 2px 0px;
+    -fx-text-fill: white;
+}
+.choiceBox{
+    -fx-background-color:transparent;
+    -fx-border-color: #CB4335;
+    -fx-border-width: 0px 0px 2px 0px;
+    -fx-mark-color:#860b00;
+}
+.choiceBox .label{
+    -fx-text-fill: black;
+}
+.login_container_Button{
+    -fx-pref-width: 420px;
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-padding: 10px;
+    -fx-font-weight: bold;
+
+}
