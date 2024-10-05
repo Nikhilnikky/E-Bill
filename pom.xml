@@ -75,7 +75,8 @@
             </plugin>
 
 <!-- recently added to make snapshot jar as executable jar-->
-         <plugin>
+         
+<!--          <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
                   <configuration>
@@ -86,7 +87,31 @@
                                     </manifest>
                            </archive>
                   </configuration>
-         </plugin>
+         </plugin> -->
+
+         <plugin>
+            <artifactId>maven-assembly-plugin</artifactId>
+            <configuration>
+                <archive>
+                    <manifest>
+                        <mainClass>com.ebill.ebill.Main</mainClass>
+                    </manifest>
+                </archive>
+                <descriptorRefs>
+                    <descriptorRef>jar-with-dependencies</descriptorRef>
+                </descriptorRefs>
+            </configuration>
+            <executions>
+                <execution>
+                    <id>make-assembly</id>
+                    <phase>package</phase>
+                    <goals>
+                        <goal>single</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+                 
 <!--                recently added            -->
 
                  
