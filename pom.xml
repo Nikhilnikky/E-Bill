@@ -73,6 +73,23 @@
                     </execution>
                 </executions>
             </plugin>
+
+<!-- recently added to make snapshot jar as executable jar-->
+         <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                  <configuration>
+                           <archive>
+                                    <manifest>
+                                             <addClasspath>true</addClasspath>
+                                             <mainClass>com.ebill.ebill.Main</mainClass>
+                                    </manifest>
+                           </archive>
+                  </configuration>
+         </plugin>
+<!--                recently added            -->
+
+                 
         </plugins>
     </build>
 </project>
