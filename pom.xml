@@ -62,7 +62,13 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.ebill.ebill.Main</mainClass>
+                           <archive>
+                                    <manifest>
+                                             <addClasspath>true</addClasspath>
+                                             <mainClass>com.ebill.ebill.Main</mainClass>
+                                    </manifest>
+                           </archive>
+<!--                             <mainClass>com.ebill.ebill.Main</mainClass> -->
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>
